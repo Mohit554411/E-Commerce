@@ -1,0 +1,62 @@
+.navbar{
+    background-color: #afcca3;
+	display: flex;
+	justify-content: space-between;
+	padding: 1.2vw;
+}
+.nav-logo-img{
+    height: 109px;
+	width: 100%;
+}
+.nav-middle-header{
+    text-align: center;
+	margin-left: 5%;
+}
+.nav-middle-header h4{
+    font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	font-size: 2.4vw;
+	font-weight: bold;
+	margin: 0.5vw;
+	text-decoration: underline;
+}
+.nav-middle-header b {
+	margin-top: -10px;
+	font-size: 1vw;
+}
+.nav-middle-menu{
+    margin: 1.2vw 1vw 0vw 1vw;
+}
+.nav-middle-menu a {
+	padding: 0.5vw 1vw;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.9vw;
+	text-decoration: none;
+	color: black;
+}
+.nav-right-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+.nav-right-header input{
+	height: 25px;
+	padding: 5px;
+	width: 250px;
+	border: none;
+	background-color: #e9e9e9;
+}
+.nav-right-header input:focus{
+	outline: none;
+}
+.nav-right-header button{
+	height: 35px;
+	padding: 5px 20px;
+	border: white;
+	background-color: rgb(14, 14, 14);
+	color: white;
+	letter-spacing: 1px;
+	cursor: pointer;
+}

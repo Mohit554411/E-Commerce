@@ -1,0 +1,33 @@
+.product-list{
+    background-image: url(/assets/images//HomeBackPic4.webp); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+table{
+    text-align: left;
+    /* color: #affca3; */
+    border-collapse: collapse;
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    margin-top: 5%;
+    /* border: 2px solid #accfa3; */
+    border-radius: 10px;
+}
+table th,td{
+    padding: 20px 10px 20px 30px;
+    border-bottom: 3px solid #accfa3;
+    min-height: 160px;
+    color: black;
+    
+}
+img{
+    width: 120px;
+    height: 100px;
+}
+.last-th{
+    background-color: #cecece;
+    border-bottom: 3px solid white;
+}

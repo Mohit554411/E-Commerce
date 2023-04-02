@@ -1,0 +1,24 @@
+<div class="product-list">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product price</th>
+                <th>Product Category</th>
+                <th>Product Desciption</th>
+                <th>Product Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productsDetails">
+
+                <td>{{product.productsName}}</td>
+                <td>{{product.productsPrice | currency:'INR'}}</td>
+                <td>{{product.productsCategory}}</td>
+                <td>{{product.productsDesc}}</td>
+                <td class="last-th"><img src="{{product.productsImg}}" alt=""></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

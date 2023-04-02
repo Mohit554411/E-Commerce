@@ -1,0 +1,28 @@
+<nav class="navbar">
+    <div>
+        <img src="./assets/images/monkeyLogo.png" alt="Logo" class="nav-logo-img">
+    </div>
+    <div class="nav-middle-header">
+        <h4>Stoopid Monkey</h4>
+        <b>Drinks Company</b>
+        <div [ngSwitch]="menuType">
+            <div class="nav-middle-menu" *ngSwitchCase="'default'">
+                <a routerLink=''>Home</a>
+                <a routerLink='/seller'>Seller</a>
+                <a routerLink='#'>Login</a>
+                <a routerLink='#'>Cart(0)</a>
+            </div>
+            <div class="nav-middle-menu" *ngSwitchCase="'seller'">
+                <a routerLink=''>Home</a>
+                <a routerLink='/seller'>Product List</a>
+                <a routerLink='/seller-add-products'>Add Product</a>
+                <a routerLink='/seller-details'>{{sellerDetails.name}}</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="nav-right-header">
+        <input type="text">
+        <button>Search</button>
+    </div>
+</nav>

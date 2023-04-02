@@ -1,0 +1,73 @@
+.seller-auth{
+    background-image: url(/assets/images//HomeBackPic2.webp); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.seller-signUp,.seller-login {
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    padding: 30px;
+    margin-top: 3%;
+}
+.seller-signUp h1,.seller-login h1{
+    text-align: center;
+    color: black;
+    border: 4px solid #afcca3;
+    margin-top: 0;
+    padding:20px 10px;
+}
+.seller-login h5{
+   text-align: center;
+   color: red;
+}
+.seller-signUp-input ,.seller-login-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.seller-signUp-input input ,.seller-login-input input{
+   margin-bottom: 20px;
+   font-size: 14px;
+   padding: 12px;
+   border: 1px solid #afcca3;
+}
+.seller-signUp-input input:focus, .seller-login-input input:focus{
+ outline: none;
+ }
+.seller-signUp-input label, .seller-login-input label{
+   font-size: 15px;
+   font-weight: bold;
+   margin-bottom: 15px;
+ }
+ .seller-signUp button, .seller-login button{
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid white;
+ }
+ .seller-signUp button:hover, .seller-login button:hover{
+    transition: all 0.5s ease-in-out ;
+    padding: 15px 30px;
+    background-color: #afcca3;
+    color: white;
+    border: 1px solid white;
+ }
+ .submit-button{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+ }
+ .submit-button p{
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 20px;
+ }

@@ -1,0 +1,41 @@
+.seller-details{
+    background-image: url(/assets/images//recyleImage.webp); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.seller-details-card{
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+}
+.seller-details-card h1{
+  color: black;
+  text-align: center;
+}
+.details-row{
+    display: flex;
+    justify-content: space-around;
+}
+.logout{
+    display: block;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(212, 58, 58);
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.table-details{
+    width: 80%;
+    margin: auto;
+}
+.table-details td{
+   padding: 20px;
+   border-bottom: 1px solid black;
+   
+}
