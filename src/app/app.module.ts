@@ -10,7 +10,8 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerDetailsComponent } from './seller-details/seller-details.component';
-import { AddProductsComponent } from './add-products/add-products.component'
+import { AddProductsComponent } from './add-products/add-products.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { AddProductsComponent } from './add-products/add-products.component'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

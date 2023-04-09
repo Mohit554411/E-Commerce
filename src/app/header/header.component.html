@@ -1,28 +1,37 @@
 <nav class="navbar">
-    <div>
-        <img src="./assets/images/monkeyLogo.png" alt="Logo" class="nav-logo-img">
-    </div>
-    <div class="nav-middle-header">
-        <h4>Stoopid Monkey</h4>
-        <b>Drinks Company</b>
-        <div [ngSwitch]="menuType">
-            <div class="nav-middle-menu" *ngSwitchCase="'default'">
-                <a routerLink=''>Home</a>
-                <a routerLink='/seller'>Seller</a>
-                <a routerLink='#'>Login</a>
-                <a routerLink='#'>Cart(0)</a>
-            </div>
-            <div class="nav-middle-menu" *ngSwitchCase="'seller'">
-                <a routerLink=''>Home</a>
-                <a routerLink='/seller'>Product List</a>
-                <a routerLink='/seller-add-products'>Add Product</a>
-                <a routerLink='/seller-details'>{{sellerDetails.name}}</a>
-            </div>
+    <div class="first-row">
+        <div class="nav-left-header">
+            <a routerLink=''><img src="./assets/images/monkeyLogo.png" alt="Logo" class="nav-logo-img"></a>
+            <!-- <h4>Stoopid Monkey</h4> -->
+            <!-- <b>Drinks Company</b> -->
         </div>
-
+        <div class="nav-middle-header">
+            <input type="text" placeholder="Find beer, whiskey, vodka & rum">
+            <fa-icon [icon]="searchButton"></fa-icon>
+        </div>
+        <div class="nav-right-menu">
+            <a href="">Login</a>
+            <a href="">Create Account</a>
+            <a href=""><fa-icon [icon]="cartIcon"></fa-icon></a>
+        </div>
     </div>
-    <div class="nav-right-header">
-        <input type="text">
-        <button>Search</button>
+    <div [ngSwitch]="menuType" class="second-row">
+        <div  *ngSwitchCase="'default'">
+            <a routerLink=''><fa-icon [icon]="homeIcon"></fa-icon></a>
+            <a routerLink=''>Beer</a>
+            <a routerLink=''>Whiskey</a>
+            <a routerLink=''>Rum</a>
+            <a routerLink=''>Vodka</a>
+            <a routerLink='/seller'>Join As Seller</a>
+        </div>
+        <div  *ngSwitchCase="'seller'">
+            <a routerLink=''><fa-icon [icon]="homeIcon"></fa-icon></a>
+            <a routerLink='/seller'>Product List</a>
+            <a routerLink='/seller-add-products'>Add Product</a>
+            <a routerLink='/seller-details'><fa-icon [icon]="personIcon"></fa-icon>&nbsp;&nbsp;{{sellerDetails.name}}</a>
+        </div>
     </div>
 </nav>
+<div class="margin-top">
+
+</div>

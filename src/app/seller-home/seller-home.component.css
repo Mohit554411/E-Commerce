@@ -31,3 +31,19 @@ img{
     background-color: #cecece;
     border-bottom: 3px solid white;
 }
+.deleteIcon{
+    color: rgb(119, 8, 8);
+    font-size: 22px;
+    cursor: pointer;
+}
+.editIcon{
+    color: rgb(6, 122, 84);
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.delete{
+    position: absolute;
+    
+    
+}

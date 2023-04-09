@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router'
 import { sellerSignup } from '../models/seller-signup';
+import {faCartShopping,faSearch,faHome,faUser} from '@fortawesome/free-solid-svg-icons'
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit{
+  cartIcon = faCartShopping;
+  searchButton = faSearch;
+  homeIcon = faHome;
+  personIcon = faUser;
   menuType:string='default';
   sellerDetails:sellerSignup = {
     name:'',

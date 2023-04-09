@@ -2,22 +2,26 @@
     <table class="table">
         <thead>
             <tr>
+                <th>Action</th>
                 <th>Product Name</th>
                 <th>Product price</th>
                 <th>Product Category</th>
                 <th>Product Desciption</th>
                 <th>Product Image</th>
+                
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let product of productsDetails">
-
+                <td><fa-icon [icon]="deleteIcon" class="deleteIcon" (click)="deleteProduct(product.id)"></fa-icon>
+                   <a href="seller-update-product/product.id"><fa-icon [icon]="EditIcon" class="editIcon"></fa-icon></a>
+                </td>
                 <td>{{product.productsName}}</td>
                 <td>{{product.productsPrice | currency:'INR'}}</td>
                 <td>{{product.productsCategory}}</td>
                 <td>{{product.productsDesc}}</td>
                 <td class="last-th"><img src="{{product.productsImg}}" alt=""></td>
-
+                
             </tr>
         </tbody>
     </table>

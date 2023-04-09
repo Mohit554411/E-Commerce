@@ -15,4 +15,7 @@ export class AddProductsService {
   getProductsDetails(){
     return this.http.get<productsDetails[]>("http://localhost:3000/productDetails");
   }
+  deleteProductDetails(id:number){
+    return this.http.delete(`http://localhost:3000/productDetails/${id}`);
+  }
 }

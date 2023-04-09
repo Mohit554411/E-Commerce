@@ -23,30 +23,6 @@
       "id": 1
     },
     {
-      "productsName": "Bira Boom Strong",
-      "productsPrice": "150",
-      "productsCategory": "beer",
-      "productsDesc": "Strong Beer",
-      "productsImg": "https://www.bira91.com/img/boom-strong/image-shop-2.jpg",
-      "id": 2
-    },
-    {
-      "productsName": "Kinsfisher Strom Strong Beer",
-      "productsPrice": "150",
-      "productsCategory": "beer",
-      "productsDesc": "Best Selling Beer",
-      "productsImg": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8e493786467397.5d9ad68d803c8.jpg",
-      "id": 3
-    },
-    {
-      "productsName": "Magic Moments Lemon",
-      "productsPrice": "350",
-      "productsCategory": "vodka",
-      "productsDesc": "Summer Special",
-      "productsImg": "https://liquor.trendswe.com/wp-content/uploads/2021/12/MAGIC-MOMENTS-REMIX-SMOOTH-LEMON-FLAVOURED-VODKA-1.jpg",
-      "id": 4
-    },
-    {
       "productsName": "Kinsfisher  Strong Beer",
       "productsPrice": "180",
       "productsCategory": "beer",
