@@ -1,0 +1,22 @@
+<div *ngIf="images && images.length > 0" class="carousel-container">
+    <div *ngFor="let image of images; let i=index" [ngClass]="{'image-active':seletedIndex===i}" class="carousal-slide">
+        <img [src]="image.imageSrc" [alt]="image.imageAlt" class="fade">
+        <div class="carousal-slide-card" *ngIf="seletedIndex==0">
+            <h2>Discover taste Experience</h2>
+        </div>
+        <div class="carousal-slide-card" *ngIf="seletedIndex==1">
+            <h2>Best Selling</h2>
+        </div>
+        <div class="carousal-slide-card" *ngIf="seletedIndex==2">
+            <h2>Special Stock</h2>
+        </div>
+        <div class="carousal-slide-card" *ngIf="seletedIndex==3">
+            <h2>Discount</h2>
+        </div>
+    </div>
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of images; let i=index" class="dot" [ngClass]="{'active':seletedIndex===i}"
+            (click)="selectImage(i)">
+        </span>
+    </div>
+</div>
