@@ -1,22 +1,57 @@
-<div *ngIf="images && images.length > 0" class="carousel-container">
-    <div *ngFor="let image of images; let i=index" [ngClass]="{'image-active':seletedIndex===i}" class="carousal-slide">
-        <img [src]="image.imageSrc" [alt]="image.imageAlt" class="fade">
-        <div class="carousal-slide-card" *ngIf="seletedIndex==0">
-            <h2>Discover taste Experience</h2>
+<div>
+    <div *ngIf="images && images.length > 0" class="carousel-container">
+        <div *ngFor="let image of images; let i=index" [ngClass]="{'image-active':seletedIndex===i}"
+            class="carousal-slide">
+            <img [src]="image.imageSrc" [alt]="image.imageAlt" class="fade">
+            <div class="carousal-slide-card" *ngIf="seletedIndex==0">
+                <h2>Discover. Taste. Experience.</h2>
+                <b><fa-icon [icon]="delievryIcon"></fa-icon>&nbsp; Order alcohol for delivery or pickup</b>
+            </div>
+            <div class="carousal-slide-card" *ngIf="seletedIndex==1">
+                <h2>Best Discount Offer.</h2>
+                <b><fa-icon [icon]="offerIcon"></fa-icon>&nbsp; get 50% off on your favorite drinks.</b>
+            </div>
+            <div class="carousal-slide-card" *ngIf="seletedIndex==2">
+                <h2>Special Stoopid Monkey. </h2>
+                <b><fa-icon [icon]="collectionIcon"></fa-icon>&nbsp; Best Collections and Top Brands</b>
+            </div>
+            <div class="carousal-slide-card" *ngIf="seletedIndex==3">
+                <h2>India's no.1 liqour site.</h2>
+                <b><fa-icon [icon]="OneIcon"></fa-icon>&nbsp; 50 cities and 100 outlets</b>
+            </div>
         </div>
-        <div class="carousal-slide-card" *ngIf="seletedIndex==1">
-            <h2>Best Selling</h2>
-        </div>
-        <div class="carousal-slide-card" *ngIf="seletedIndex==2">
-            <h2>Special Stock</h2>
-        </div>
-        <div class="carousal-slide-card" *ngIf="seletedIndex==3">
-            <h2>Discount</h2>
+        <div *ngIf="indicators" class="carousel-dot-container">
+            <span *ngFor="let dot of images; let i=index" class="dot" [ngClass]="{'active':seletedIndex===i}"
+                (click)="selectImage(i)">
+            </span>
         </div>
     </div>
-    <div *ngIf="indicators" class="carousel-dot-container">
-        <span *ngFor="let dot of images; let i=index" class="dot" [ngClass]="{'active':seletedIndex===i}"
-            (click)="selectImage(i)">
-        </span>
+    <div class="category-card">
+        <div>
+            <img src="https://storage.gotoliquorstore.com/category/7cf6f894-abad-46aa-bc8c-2c494faa6daf.jpg" alt="">
+            <p>Beer</p>
+        </div>
+        <div>
+            <img src="https://storage.gotoliquorstore.com/category/e4279320-0fc1-4293-b036-d4e4db26dbca.jpg" alt="">
+            <p>whiskey</p>
+        </div>
+        <div>
+            <img src="https://storage.gotoliquorstore.com/category/a843a16b-9a7d-49f4-a066-311beff22dc0.jpg" alt="">
+            <p>Rum</p>
+        </div>
+        <div>
+            <img src="https://storage.gotoliquorstore.com/category/4206befa-27ba-4b61-869d-403d931d4838.jpg" alt="">
+            <p>Vodka</p>
+        </div>
+    </div>
+    <div>
+        <div class="best-selling">
+            <div>
+                 
+            </div>
+            <div>
+
+            </div>
+        </div>
     </div>
 </div>

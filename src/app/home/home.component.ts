@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {faStar} from '@fortawesome/free-solid-svg-icons';
+import {faTag,faBox,faCopyright,faTrophy} from '@fortawesome/free-solid-svg-icons';
 interface carouselImages{
   imageSrc:string;
   imageAlt:string;
@@ -10,7 +10,10 @@ interface carouselImages{
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  offerIcon = faStar
+  offerIcon = faTag;
+  delievryIcon = faBox;
+  collectionIcon = faCopyright;
+  OneIcon = faTrophy
   images: carouselImages[]=[
     {
       imageSrc:
