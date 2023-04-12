@@ -1,0 +1,54 @@
+.footerStyle {
+	background-color: black;
+	display: flex;
+	padding: 50px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.fisrtFooter {
+	width: 30%;
+	color: black;
+	padding: 20px;
+	background-color: white;
+}
+
+.footerimg {
+	width: 100%;
+	height: 300px;
+
+}
+
+div.secondFooter {
+	width: 35%;
+	color: white;
+	padding: 20px;
+}
+
+div.secondFooter a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	text-align: start;
+	margin-left: 35%;
+	padding:15px 10px;
+	transition: all 500ms ease-in-out;
+}
+
+div.secondFooter a:hover {
+	color: black;
+	background-color: white;
+	margin-left: 0;
+	text-align: center;
+}
+.about-us{
+    margin-left: 20px;
+}
+.menu{
+    margin-left: 35%;
+    font-size: 22px;
+}
+.icon{
+    height: 16px;
+}

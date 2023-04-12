@@ -12,6 +12,11 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerDetailsComponent } from './seller-details/seller-details.component';
 import { AddProductsComponent } from './add-products/add-products.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './footer/footer.component';
+import { BeerComponent } from './category/beer/beer.component';
+import { WhiskeyComponent } from './category/whiskey/whiskey.component';
+import { RumComponent } from './category/rum/rum.component';
+import { VodkaComponent } from './category/vodka/vodka.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +26,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SellerHomeComponent,
     SellerDetailsComponent,
     AddProductsComponent,
+    FooterComponent,
+    BeerComponent,
+    WhiskeyComponent,
+    RumComponent,
+    VodkaComponent,
   ],
   imports: [
     BrowserModule,

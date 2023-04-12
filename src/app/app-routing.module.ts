@@ -6,6 +6,10 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerAuthGuard } from './seller-auth.guard';
 import { SellerDetailsComponent } from './seller-details/seller-details.component';
 import { AddProductsComponent } from './add-products/add-products.component';
+import { BeerComponent } from './category/beer/beer.component';
+import { WhiskeyComponent } from './category/whiskey/whiskey.component';
+import { RumComponent } from './category/rum/rum.component';
+import { VodkaComponent } from './category/vodka/vodka.component';
 
 const routes: Routes = [
   {
@@ -22,6 +26,18 @@ const routes: Routes = [
   },
   {
     path:'seller-add-products',component:AddProductsComponent,canActivate:[SellerAuthGuard]
+  },
+  {
+    path:'beer',component:BeerComponent
+  },
+  {
+    path:'whiskey',component:WhiskeyComponent
+  },
+  {
+    path:'rum',component:RumComponent
+  },
+  {
+    path:'vodka',component:VodkaComponent
   }
 ];
 
