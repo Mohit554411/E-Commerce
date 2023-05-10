@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router'
 import { sellerSignup } from '../models/seller-signup';
+import {} from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-seller-details',

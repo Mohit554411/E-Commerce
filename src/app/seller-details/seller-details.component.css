@@ -10,10 +10,14 @@
     background-color: white;
     margin: auto;
     padding: 20px;
+    border: 1px solid #72003b;
 }
 .seller-details-card h1{
-  color: black;
+  color: white;
   text-align: center;
+  background-color: #72003b;
+  margin: 0;
+  padding: 22px 0;
 }
 .details-row{
     display: flex;
@@ -23,12 +27,13 @@
     display: block;
     width: 100%;
     margin: auto;
-    background-color: rgb(212, 58, 58);
+    background-color: #72003b;
     color: white;
     padding: 15px 35px;
     border: none;
     margin-top: 50px;
     cursor: pointer;
+    font-size: 18px;
 }
 .table-details{
     width: 80%;
