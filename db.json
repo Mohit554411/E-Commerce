@@ -23,6 +23,46 @@
       "id": 1
     },
     {
+      "productsName": "Old Monk",
+      "productsPrice": "1200",
+      "productsCategory": "rum",
+      "productsDesc": "This is oldest Rum",
+      "productsImg": "https://masala-wala.com/wp-content/uploads/RUM-966-1.jpg",
+      "id": 1
+    },
+    {
+      "productsName": "Kinsfisher  Strong Beer",
+      "productsPrice": "180",
+      "productsCategory": "beer",
+      "productsDesc": "Best Selling Beer",
+      "productsImg": "https://tomswinegoa.com/wp-content/uploads/2020/01/ezgif.com-gif-maker-1.jpg",
+      "id": 5
+    },
+    {
+      "productsName": "Kinsfisher  Strong Beer",
+      "productsPrice": "180",
+      "productsCategory": "beer",
+      "productsDesc": "Best Selling Beer",
+      "productsImg": "https://tomswinegoa.com/wp-content/uploads/2020/01/ezgif.com-gif-maker-1.jpg",
+      "id": 5
+    },
+    {
+      "productsName": "Kinsfisher  Strong Beer",
+      "productsPrice": "180",
+      "productsCategory": "beer",
+      "productsDesc": "Best Selling Beer",
+      "productsImg": "https://tomswinegoa.com/wp-content/uploads/2020/01/ezgif.com-gif-maker-1.jpg",
+      "id": 5
+    },
+    {
+      "productsName": "Kinsfisher  Strong Beer",
+      "productsPrice": "180",
+      "productsCategory": "beer",
+      "productsDesc": "Best Selling Beer",
+      "productsImg": "https://tomswinegoa.com/wp-content/uploads/2020/01/ezgif.com-gif-maker-1.jpg",
+      "id": 5
+    },
+    {
       "productsName": "Kinsfisher  Strong Beer",
       "productsPrice": "180",
       "productsCategory": "beer",

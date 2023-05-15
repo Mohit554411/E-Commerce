@@ -11,8 +11,8 @@
         </div>
         <div class="nav-right-menu">
             <a href="">Login</a>
-            <a href="">Create Account</a>
-            <a href=""><fa-icon [icon]="cartIcon"></fa-icon></a>
+            <a routerLink='/seller'>Join As Seller</a>
+            <a href="">Cart&nbsp;&nbsp;<fa-icon [icon]="cartIcon"></fa-icon></a>
         </div>
     </div>
     <div [ngSwitch]="menuType" class="second-row">
@@ -22,7 +22,7 @@
             <a routerLink='/whiskey'>Whiskey</a>
             <a routerLink='/rum'>Rum</a>
             <a routerLink='/vodka'>Vodka</a>
-            <a routerLink='/seller'>Join As Seller</a>
+            
         </div>
         <div  *ngSwitchCase="'seller'">
             <a routerLink=''><fa-icon [icon]="homeIcon"></fa-icon></a>

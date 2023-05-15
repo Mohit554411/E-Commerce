@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {faTag,faBox,faCopyright,faTrophy} from '@fortawesome/free-solid-svg-icons';
+import { AddProductsService } from '../services/add-products.service';
+import { productsDetails } from '../models/productsDetails';
 interface carouselImages{
   imageSrc:string;
   imageAlt:string;
@@ -10,10 +12,14 @@ interface carouselImages{
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  constructor(private addProductService:AddProductsService){}
+  productsDetails:productsDetails[]|undefined ;
+  allproductsDetails:productsDetails[]|undefined ;
   offerIcon = faTag;
   delievryIcon = faBox;
   collectionIcon = faCopyright;
-  OneIcon = faTrophy
+  OneIcon = faTrophy;
+  category:string = 'beer';
   images: carouselImages[]=[
     {
       imageSrc:
@@ -44,6 +50,12 @@ export class HomeComponent {
     if(this.autoslide){
       this.autoSlideImage();
     }
+    this.addProductService.getProductsDetails().subscribe((result)=>{
+      this.allproductsDetails = result;
+      this.productsDetails = this.allproductsDetails.filter(product => product.productsCategory === this.category);
+    })
+    
+    
   }
   autoSlideImage():void{
     setInterval(()=>{
@@ -60,6 +72,12 @@ export class HomeComponent {
     else{
       this.seletedIndex++;
     }
+  }
+
+  seletedCategory(category:string){
+    this.category = category;
+    this.productsDetails =this.allproductsDetails && this.allproductsDetails.filter(product=> product.productsCategory === this.category);
+    console.log(this.productsDetails);
   }
 
 }

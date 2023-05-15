@@ -27,30 +27,27 @@
         </div>
     </div>
     <div class="category-card">
-        <a routerLink='/beer'>
             <div>
-                <img src="https://storage.gotoliquorstore.com/category/7cf6f894-abad-46aa-bc8c-2c494faa6daf.jpg" alt="">
+                <img src="https://storage.gotoliquorstore.com/category/7cf6f894-abad-46aa-bc8c-2c494faa6daf.jpg" alt="" (click)="seletedCategory('beer')">
                 <p>Beer</p>
             </div>
-        </a>
-        <a routerLink='/whiskey'>
             <div>
-                <img src="https://storage.gotoliquorstore.com/category/e4279320-0fc1-4293-b036-d4e4db26dbca.jpg" alt="">
+                <img src="https://storage.gotoliquorstore.com/category/e4279320-0fc1-4293-b036-d4e4db26dbca.jpg" alt="" (click)="seletedCategory('whiskey')">
                 <p>whiskey</p>
             </div>
-        </a>
-        <a routerLink='/rum'>
             <div>
-                <img src="https://storage.gotoliquorstore.com/category/a843a16b-9a7d-49f4-a066-311beff22dc0.jpg" alt="">
+                <img src="https://storage.gotoliquorstore.com/category/a843a16b-9a7d-49f4-a066-311beff22dc0.jpg" alt="" (click)="seletedCategory('rum')">
                 <p>Rum</p>
             </div>
-        </a>
-        <a routerLink='/vodka'>
             <div>
-                <img src="https://storage.gotoliquorstore.com/category/4206befa-27ba-4b61-869d-403d931d4838.jpg" alt="">
+                <img src="https://storage.gotoliquorstore.com/category/4206befa-27ba-4b61-869d-403d931d4838.jpg" alt="" (click)="seletedCategory('vodka')">
                 <p>Vodka</p>
             </div>
-        </a>
+    </div>
+    <div class="DisplayProductByCategory">
+         <div class="productCard" *ngFor="let product of productsDetails">
+              <img [src]="product.productsImg" alt="">
+         </div>
     </div>
     <div style="background-color: #accfa3;">
         <div class="best-selling">
